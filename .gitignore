@@ -1,0 +1,42 @@
+# Initially created by .ignore support plugin (hsz.mobi)
+### Node template
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Test coverage
+lib-cov
+coverage
+
+# Dependency directories
+node_modules/
+
+# TypeScript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+
+# Nuxt build output
+.nuxt
+dist
+
+# 8base
+backend/.build
+
+# Service worker
+sw.*
+
+# Mac OSX
+.DS_Store
+
+# cypress examples
+cypress/examples

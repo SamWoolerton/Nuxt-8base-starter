@@ -1,0 +1,17 @@
+html .theme--light.v-application {
+  background: hsla(187, 50%, 99%);
+}
+
+.v-card {
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.08) !important;
+}
+
+.v-data-table table tbody tr.expanded.expanded__content {
+  box-shadow: inset 0px 4px 8px -5px rgba(50, 50, 50, 0.25),
+    inset 0px -4px 8px -5px rgba(50, 50, 50, 0.25);
+}
+
+.v-data-table tbody tr:hover:not(.v-data-table__expand-row),
+.no-hover table tr:hover {
+  background: inherit !important;
+}

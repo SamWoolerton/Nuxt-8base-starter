@@ -1,0 +1,68 @@
+{
+  "name": "nuxt-8base-starter",
+  "version": "1.0.0",
+  "description": "Starter template for Nuxt and 8base",
+  "author": "Sam Woolerton",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --modern",
+    "generate": "nuxt generate --modern",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "npm run lint && npm run unit && npm run integration",
+    "integration": "cypress run",
+    "integration:open": "cypress open",
+    "unit": "jest test",
+    "unit:only": "jest test/unit",
+    "unit:watch": "npm run unit:only -- --watch",
+    "storybook": "start-storybook -p 6060"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "dependencies": {
+    "@8base/auth": "^0.37.0",
+    "@8base/web-auth0-auth-client": "^0.35.0",
+    "@nuxtjs/apollo": "^4.0.0-rc10",
+    "@nuxtjs/axios": "^5.3.6",
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "graphql-tag": "^2.10.1",
+    "lodash-es": "^4.17.15",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-storyshots": "^5.2.6",
+    "@storybook/addon-storyshots-puppeteer": "^5.2.6",
+    "@storybook/vue": "^5.2.6",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "babel-preset-vue": "^2.0.2",
+    "cypress": "^3.6.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-cypress": "^2.7.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "husky": "^2.6.0",
+    "jest": "^24.1.0",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.16.4",
+    "vue-jest": "^4.0.0-0"
+  }
+}

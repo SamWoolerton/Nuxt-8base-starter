@@ -1,0 +1,6 @@
+{
+  "projectId": "",
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "screenshotsFolder": "cypress/screenshots",
+  "video": false
+}
