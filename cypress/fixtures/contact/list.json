@@ -1,0 +1,41 @@
+{
+  "data": {
+    "contactsList": {
+      "items": [
+        {
+          "id": "ck3nqwim5006601l540fa78l6",
+          "firstName": "Bob",
+          "lastName": "Smith",
+          "email": "bob@example.co",
+          "type": "lead",
+          "__typename": "Contact"
+        },
+        {
+          "id": "ck3nqwiv300rq01jtg2gw1uj4",
+          "firstName": "Tom",
+          "lastName": "Johnson",
+          "email": "tom@example.co",
+          "type": "lead",
+          "__typename": "Contact"
+        },
+        {
+          "id": "ck3nqwj9o006c01l55b11gdpq",
+          "firstName": "Jenny",
+          "lastName": "Jacobsen",
+          "email": "jenny@example.co",
+          "type": "lead",
+          "__typename": "Contact"
+        },
+        {
+          "id": "ck3nqwje300rv01jt7n2i38dy",
+          "firstName": "Kayla",
+          "lastName": "Crawford",
+          "email": "kayla@example.co",
+          "type": "client",
+          "__typename": "Contact"
+        }
+      ],
+      "__typename": "ContactListResponse"
+    }
+  }
+}

@@ -50,6 +50,7 @@
     "babel-jest": "^24.1.0",
     "babel-plugin-require-context-hook": "^1.0.0",
     "babel-preset-vue": "^2.0.2",
+    "core-js": "^2.6.10",
     "cypress": "^3.6.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^4.1.0",

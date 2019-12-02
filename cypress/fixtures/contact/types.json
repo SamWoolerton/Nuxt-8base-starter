@@ -1,0 +1,13 @@
+{
+  "data": {
+    "tableField": {
+      "fieldType": "SWITCH",
+      "fieldTypeAttributes": {
+        "format": "CUSTOM",
+        "listOptions": ["lead", "client"],
+        "__typename": "SwitchFieldTypeAttributes"
+      },
+      "__typename": "TableField"
+    }
+  }
+}

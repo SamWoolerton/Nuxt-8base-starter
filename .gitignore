@@ -37,6 +37,3 @@ sw.*
 
 # Mac OSX
 .DS_Store
-
-# cypress examples
-cypress/examples

@@ -1,8 +1,8 @@
 {
   "tables": [
     {
-      "name": "Contacts",
-      "displayName": "Contacts",
+      "name": "Contact",
+      "displayName": "Contact",
       "isSystem": false,
       "fields": [
         {
