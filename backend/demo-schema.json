@@ -60,15 +60,18 @@
           "name": "type",
           "displayName": "type",
           "description": null,
-          "fieldType": "TEXT",
+          "fieldType": "SWITCH",
           "fieldTypeAttributes": {
-            "format": "UNFORMATTED",
-            "fieldSize": 50
+            "format": "CUSTOM",
+            "listOptions": [
+              "lead",
+              "client"
+            ]
           },
           "isList": false,
           "isRequired": false,
           "isUnique": false,
-          "defaultValue": null,
+          "defaultValue": "lead",
           "isSystem": false,
           "isMeta": false,
           "relation": null
