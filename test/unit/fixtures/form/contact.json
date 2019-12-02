@@ -1,0 +1,37 @@
+{
+  "value": { "name": "", "type": "Inventory" },
+  "fields": [
+    {
+      "field": "firstName",
+      "input": "text",
+      "label": "First name",
+      "component": "VTextField",
+      "outlined": true,
+      "items": []
+    },
+    {
+      "field": "lastName",
+      "input": "text",
+      "label": "Last name",
+      "component": "VTextField",
+      "outlined": true,
+      "items": []
+    },
+    {
+      "field": "email",
+      "input": "text",
+      "label": "Email",
+      "component": "VTextField",
+      "outlined": true,
+      "items": []
+    },
+    {
+      "field": "type",
+      "input": "switch",
+      "label": "Type",
+      "component": "VSelect",
+      "outlined": true,
+      "items": ["lead", "client"]
+    }
+  ]
+}
