@@ -1,0 +1,112 @@
+{
+  "tables": [
+    {
+      "name": "Contacts",
+      "displayName": "Contacts",
+      "isSystem": false,
+      "fields": [
+        {
+          "name": "firstName",
+          "displayName": "firstName",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 50
+          },
+          "isList": false,
+          "isRequired": false,
+          "isUnique": false,
+          "defaultValue": null,
+          "isSystem": false,
+          "isMeta": false,
+          "relation": null
+        },
+        {
+          "name": "lastName",
+          "displayName": "lastName",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 50
+          },
+          "isList": false,
+          "isRequired": false,
+          "isUnique": false,
+          "defaultValue": null,
+          "isSystem": false,
+          "isMeta": false,
+          "relation": null
+        },
+        {
+          "name": "email",
+          "displayName": "email",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 50
+          },
+          "isList": false,
+          "isRequired": false,
+          "isUnique": false,
+          "defaultValue": null,
+          "isSystem": false,
+          "isMeta": false,
+          "relation": null
+        },
+        {
+          "name": "type",
+          "displayName": "type",
+          "description": null,
+          "fieldType": "TEXT",
+          "fieldTypeAttributes": {
+            "format": "UNFORMATTED",
+            "fieldSize": 50
+          },
+          "isList": false,
+          "isRequired": false,
+          "isUnique": false,
+          "defaultValue": null,
+          "isSystem": false,
+          "isMeta": false,
+          "relation": null
+        }
+      ]
+    }
+  ],
+  "data": {
+    "Contacts": [
+      {
+        "$id": "contact-1",
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "email": "bob@example.co",
+        "type": "lead"
+      },
+      {
+        "$id": "contact-2",
+        "firstName": "Tom",
+        "lastName": "Johnson",
+        "email": "tom@example.co",
+        "type": "lead"
+      },
+      {
+        "$id": "contact-3",
+        "firstName": "Jenny",
+        "lastName": "Jacobsen",
+        "email": "jenny@example.co",
+        "type": "lead"
+      },
+      {
+        "$id": "contact-4",
+        "firstName": "Kayla",
+        "lastName": "Crawford",
+        "email": "kayla@example.co",
+        "type": "client"
+      }
+    ]
+  },
+  "version": "0.0.82"
+}
