@@ -28,9 +28,6 @@ const base = ({ diff = {}, dataDiff = {}, resource = "default" } = {}) => ({
 })
 
 storiesOf("ModalEdit", module)
-  .add("Loading", () => ({
-    ...base({ dataDiff: { loading: true }, resource: "contact" })
-  }))
   .add("Closed", () => ({
     ...base({ dataDiff: { show: false }, resource: "contact" })
   }))
