@@ -1,0 +1,16 @@
+query {
+  table(name: "") {
+    fields {
+      id
+      name
+      fieldType
+      fieldTypeAttributes {
+        ...switchFrag
+      }
+    }
+  }
+}
+
+fragment switchFrag on SwitchFieldTypeAttributes {
+  listOptions
+}
