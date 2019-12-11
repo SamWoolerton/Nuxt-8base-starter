@@ -13,9 +13,12 @@ import {
 
 export default ({ store }, inject) => {
   const graphqlClient = graphqlClientConstructor(store)
+  // make another client without auth headers for logins and signups
+  const noAuthClient = graphqlClientConstructor(store, { auth: false })
 
   const wrapper = {
     client: graphqlClient,
+    noAuthClient,
     queries: 0,
     isLoading() {
       return !!this.queries

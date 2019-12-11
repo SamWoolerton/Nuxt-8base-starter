@@ -8,15 +8,16 @@
             Check out the quick links below (change these in config.js in the
             root of the project).
           </p>
-          <p v-else>Log in to use the app.</p>
+          <p v-else>Log in to use the app, or sign up below if you don't have an account yet.</p>
         </div>
         <div>
-          <v-btn v-if="authenticated" @click="logout" color="primary"
-            >Log out</v-btn
-          >
-          <v-btn v-else @click="login($route.path)" color="primary"
-            >Log in</v-btn
-          >
+          <v-btn v-if="authenticated" @click="logout" color="primary">Log out</v-btn>
+          <span v-else>
+            <v-btn @click="login($route.path)" color="primary">Log in</v-btn>
+            <nuxt-link to="/auth/signup">
+              <v-btn color="primary">Sign up</v-btn>
+            </nuxt-link>
+          </span>
         </div>
       </v-sheet>
     </v-layout>

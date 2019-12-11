@@ -1,10 +1,13 @@
 # inventory
 
-> Starter app using Nuxt frontend and 8base for a hosted backend.
-> Largely a CRUD interface as the original is an internal app where design doesn't matter much. With all the pieces in place though, should be easy to overhaul the visuals for fully-customised styling.
-> Recommend using Netlify to deploy the frontend.
+- Starter app using Nuxt frontend and 8base for a hosted backend.
+- Largely a CRUD interface as the original is an internal app where design doesn't matter much. With all the pieces in place though, should be easy to overhaul the visuals for fully-customised styling.
+- Recommend using Netlify to deploy the frontend.
+- This was originally an internal app with no need for signups (just managed through 8base UI), so the only link to the new signup page is on the homepage - you'll want to improve this UX
 
 ## Build Setup
+
+Start by copying `sample.env` to `.env` and filling out the environment variables.
 
 ```bash
 # install dependencies

@@ -2,6 +2,8 @@ const unprotectedPages = [
   "/",
   "/auth/callback",
   "/auth/callback/",
+  "/auth/signup",
+  "/auth/signup/",
   "/logout",
   "/logout/"
 ]

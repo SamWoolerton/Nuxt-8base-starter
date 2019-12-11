@@ -6,7 +6,7 @@ import { InMemoryCache } from "apollo-cache-inmemory"
 
 import { getToken } from "~/utility/auth"
 
-export default store => {
+export default (store, { auth = false } = {}) => {
   // docs: https://www.apollographql.com/docs/link/links/http/
   const httpLink = new HttpLink({
     uri: process.env.API_BASE_URL
@@ -49,7 +49,9 @@ export default store => {
   }))
 
   return new ApolloClient({
-    link: errorLink.concat(authLink.concat(httpLink)),
+    link: auth
+      ? errorLink.concat(authLink.concat(httpLink))
+      : errorLink.concat(httpLink),
     cache: new InMemoryCache(),
     connectToDevTools: true
   })
